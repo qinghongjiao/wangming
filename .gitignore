@@ -1,0 +1,13 @@
+_site
+.jekyll-cache
+_notes/.obsidian
+_notes/000 Inbox
+_notes/500 Projects
+_notes/600 Archive
+_notes/700 Obsidian
+.vscode/settings.json
+_notes/100 Public/.DS_Store
+assets/.DS_Store
+assets/css/.DS_Store
+assets/img/.DS_Store
+_notes/0000 Newsletter.md

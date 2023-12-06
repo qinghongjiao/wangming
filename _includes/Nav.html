@@ -1,0 +1,81 @@
+{%- comment -%}
+*
+* MIT License
+* Copyright (c) 2020 Raghuveer S, Hiran Venugopalan
+*
+* File: Nav.html
+* Author Raghuveer S, Hiran Venugopalan
+*
+* This file contains the markup for the context menu thingy you see when you right
+* click on the post titles on the home page.
+*
+{%- endcomment -%}
+
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" style="padding-left: 0;"; href="{{ site.baseurl }}/">
+                      <!-- img -->
+        <img src="{{ site.baseurl }}/assets/img/favicon.png" width="30" height="30" alt="logo.png"> 
+          <script src="{{ site.baseurl }}/assets/js/modeswitcher.js"></script>  
+          <script src="{{ site.baseurl }}/assets/js/Hamburger.js"></script>
+      <div class="navbar-item navbar-dark-mode__mobile is-hidden-tablet" onclick="modeSwitcher()">
+        <div class="buttons">
+          <a class="button is-text">
+            <span class="icon is-small">
+              <img src="{{ '/assets/img/sun.svg' | relative_url }}" id="theme-toggle-img--mobile">
+            </span>
+          </a>
+        </div>
+      </div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-start">
+          <!-- notes -->
+          
+       <!--  <a href="{{'/notes' | relative_url}}" class="navbar-item">
+          Notes
+        </a> -->
+          
+           <!-- collections -->
+        <!-- <a href="{{'/collections' | relative_url}}" class="navbar-item">
+          Collections
+        </a> -->
+          
+        <a href="{{'/devs' | relative_url}}" class="navbar-item">
+          Devs
+        </a>
+        <a href="{{'/bookmark' | relative_url}}" class="navbar-item">
+          Bookmark
+        </a>
+          
+        <a href="{{'/guestbook' | relative_url}}" class="navbar-item">
+          Guestbook
+        </a> 
+        <a href="{{'/about' | relative_url}}" class="navbar-item">
+          About
+        </a>
+      </div>
+      <div class="navbar-end is-hidden-mobile" onclick="modeSwitcher()" >
+        <div class="navbar-item" style="padding-right: 0px;">
+          <div class="buttons">
+            <a class="button is-text">
+              <span class="icon is-small">
+                <img src="{{ '/assets/img/sun.svg' | relative_url }}" id="theme-toggle-img">
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+   window.addEventListener('DOMContentLoaded', function() {
+      initTheme()
+    });
+  </script>
