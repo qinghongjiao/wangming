@@ -30,9 +30,8 @@ baseurl: ""
 heading: 网名 # Change this 
 content: 网名| 王明丨王鸣 
 copyright:  
-  year: © 2023
-  wechat: WeChat;QingHongJiao 
-  mail: HelloWorkDev@Gmail.Com 
+  year: © 2022
+  msg: Contents under CC-BY-NC 
 
 # Set title and content for private & broken link tooltop
 privatelinks:
